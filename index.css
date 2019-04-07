@@ -49,3 +49,12 @@ body, html {
 .NavBar-picker:hover {
   background: #2c2c59;
 }
+
+
+
+.Main {
+  max-width: 1032px;
+  padding: 16px;
+  margin: 0 auto;
+  font-size: 20px;
+}
