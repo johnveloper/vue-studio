@@ -47,6 +47,5 @@ body, html {
 }
 
 .NavBar-picker:hover {
-  cursor: pointer;
   background: #2c2c59;
 }
