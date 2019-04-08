@@ -1,8 +1,8 @@
 # VueStudio
 
 ## Todo
+- [ ] Next Page Button
 - [x] Horizontally Scrollable NavBar
-- [ ] Fixed but Hideable NavBar
-- [ ] SEO optimization
+- [ ] SEO optimizations
 - [ ] GitHub link
 - [ ] Materialize
