@@ -42,12 +42,33 @@ body, html {
 }
 
 .NavBar-picker {
+  position: relative;
   padding: 4px 8px;
   border: 1px solid #41B883;
 }
 
 .NavBar-picker:hover {
   background: #2c2c59;
+}
+
+.NavBar-picker-content {
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  box-sizing: content-box;
+  background: #2c2c59;
+}
+
+.NavBar-picker-item {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 16px;
+}
+
+.NavBar-picker-item:hover {
+  cursor: default;
+  color: #41B883;
 }
 
 

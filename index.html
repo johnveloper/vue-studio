@@ -17,7 +17,13 @@
           <div class="NavBar-slash">/</div>
           <div>Docs</div>
           <div class="NavBar-slash">/</div>
-          <div class="NavBar-picker">Home ˅</div>
+          <div class="NavBar-picker" @click="togglePicker">
+            {{route}}
+            <div v-if="pickerShown" class="NavBar-picker-content">
+              <a class="NavBar-picker-item" @click="show('Home')" href="#home">Home</a>
+              <a class="NavBar-picker-item" @click="show('Installation')" href="#installation">Installation</a>
+            </div>
+          </div>
         </div>
       </header>
       <main v-html="content" class="Main"></main>
