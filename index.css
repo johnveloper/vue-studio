@@ -16,6 +16,25 @@ body, html {
   color: #dddddd;
 }
 
+a:link {
+  color: #dddddd;
+  text-decoration-color: #41B883;
+}
+
+a:visited {
+  color: #dddddd;
+  text-decoration-color: #41B883;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration-color: #41B883;
+}
+
+a:active {
+  border-color: white;
+}
+
 
 
 .NavBar {
@@ -79,7 +98,7 @@ body, html {
 
 .NavBar-picker-item {
   display: block;
-  color: #ccc;
+  color: #fff;
   text-decoration: none;
   margin: 16px;
 }
