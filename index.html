@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VueStudio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prism.css">
   </head>
 
   <body>
@@ -30,11 +31,12 @@
         <a class="NavBar-picker-item" @click="show('Introduction')" href="#introduction">Introduction</a>
         <a class="NavBar-picker-item" @click="show('Installation')" href="#installation">Installation</a>
       </div>
-      <main v-html="content" class="Main"></main>
+      <main v-html="content" class="Main language-js"></main>
     </div>
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="prism.js"></script>
     <script src="index.js"></script>
   </body>
 

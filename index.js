@@ -21,7 +21,12 @@ let app = new Vue({
     },
     show: function(route) {
       this.route = route;
-      axios.get('content/' + route.toLowerCase() + '.html').then(res => this.content = res.data);
+      axios.get('content/' + route.toLowerCase() + '.html').then(res => {
+        this.content = res.data;
+        this.$nextTick(() => {
+          Prism.highlightAll();
+        });
+      });
       this.pickerShown = false;
     },
     handleWheel: function(e) {
