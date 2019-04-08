@@ -57,6 +57,8 @@ body, html {
   left: -1px;
   box-sizing: content-box;
   background: #2c2c59;
+  max-height: 320px;
+  overflow-y: auto;
 }
 
 .NavBar-picker-item {
