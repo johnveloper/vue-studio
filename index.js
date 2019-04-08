@@ -1,7 +1,7 @@
 let app = new Vue({
   el: '#app',
   data: {
-    route: 'Home',
+    route: 'Introduction',
     content: null,
     pickerShown: false
   },
