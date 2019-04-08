@@ -17,7 +17,7 @@
           <div class="NavBar-slash">/</div>
           <div class="text-nowrap">Vue Guide</div>
           <div class="NavBar-slash">/</div>
-          <div class="NavBar-picker js-picker" @click.self="togglePicker">
+          <div class="NavBar-picker js-picker" @wheel.prevent="handleWheel" @click.self="togglePicker">
             {{route}}
             <div v-if="pickerShown" class="NavBar-picker-content">
               <a class="NavBar-picker-item" @click="show('Introduction')" href="#introduction">Introduction</a>
