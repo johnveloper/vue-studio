@@ -22,6 +22,20 @@ body, html {
   height: 56px;
   user-select: none;
   font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 420px) {
+  .NavBar {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .NavBar-picker-content {
+    display: none;
+  }
 }
 
 .NavBar-wrapper {
@@ -42,9 +56,9 @@ body, html {
 }
 
 .NavBar-picker {
-  position: relative;
   padding: 4px 8px;
   border: 1px solid #41B883;
+  position: relative;
 }
 
 .NavBar-picker:hover {
@@ -75,9 +89,26 @@ body, html {
 
 
 
+.Picker-mobile {
+  background: #2c2c59;
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  left: 32px;
+  bottom: 32px;
+}
+
+@media (min-width: 421px) {
+  .Picker-mobile {
+    display: none;
+  }
+}
+
+
+
 .Main {
   max-width: 1032px;
-  padding: 16px;
+  padding: 72px 16px;
   margin: 0 auto;
   font-size: 20px;
 }

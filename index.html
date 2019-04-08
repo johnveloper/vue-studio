@@ -17,7 +17,7 @@
           <div class="NavBar-slash">/</div>
           <div>Docs</div>
           <div class="NavBar-slash">/</div>
-          <div class="NavBar-picker" @click="togglePicker">
+          <div class="NavBar-picker js-picker" @click.self="togglePicker">
             {{route}}
             <div v-if="pickerShown" class="NavBar-picker-content">
               <a class="NavBar-picker-item" @click="show('Introduction')" href="#introduction">Introduction</a>
@@ -26,6 +26,10 @@
           </div>
         </div>
       </header>
+      <div v-if="pickerShown" class="Picker-mobile">
+        <a class="NavBar-picker-item" @click="show('Introduction')" href="#introduction">Introduction</a>
+        <a class="NavBar-picker-item" @click="show('Installation')" href="#installation">Installation</a>
+      </div>
       <main v-html="content" class="Main"></main>
     </div>
     

@@ -10,11 +10,14 @@ let app = new Vue({
   },
   methods: {
     togglePicker: function() {
-      this.pickerShown = !this.pickerShown;
+      if (!this.pickerShown) {
+        this.pickerShown = !this.pickerShown;
+      }
     },
     show: function(route) {
       this.route = route;
       axios.get('content/' + route.toLowerCase() + '.html').then(res => this.content = res.data);
+      this.pickerShown = false;
     }
   }
 });

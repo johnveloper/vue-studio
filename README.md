@@ -1,7 +1,7 @@
 # VueStudio
 
 ## Todo
-- [ ] Horizontally Scrollable NavBar
+- [x] Horizontally Scrollable NavBar
 - [ ] Fixed but Hideable NavBar
 - [ ] SEO optimization
 - [ ] GitHub link
