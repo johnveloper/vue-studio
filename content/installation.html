@@ -1,7 +1,27 @@
 <h1>Installation</h1>
-
-<h2>Latest Version</h2>
 <p>This guide is up to latest stable version for now (8 April 2019) - v2.6.10. Detailed release notes can be found on <a href="https://github.com/vuejs/vue/releases">GitHub</a>.</p>
 
 <h2>Browser Compatibility</h2>
 <p>Vue supports all ES5-compilant browsers, that is all browser except IE8 and below, where ES5 is unshimmable.</p>
+
+<h2>Vue Devtools</h2>
+<p>When using Vue, it's recommended also installing the <a href="https://github.com/vuejs/vue-devtools#vue-devtools">Vue Devtools</a> in your browser, allowing you to inspect and debug your Vue applications in a more user-friendly interface.</p>
+
+<h2>Installation</h2>
+<p>When it comes to actually installing Vue, we got many options - you can download Vue and include it with script tag, you can include it from a CDN, you can install it with NPM, or you can use the Vue CLI.</p>
+
+<h3>Direct Script Include</h3>
+<p>You can simply download and include with a script tag. <code>Vue</code> will be registered as a global variable.</p>
+<ul>
+  <li><a href="https://vuejs.org/js/vue.js">Download development version with helpful warnings and debug mode</a></li>
+  <li><a href="https://vuejs.org/js/vue.min.js">Download production, minified version with warnings stripped - 33.30KB min+gzip</a></li>
+</ul>
+
+<h3>CDN</h3>
+<p>For prototyping and learning purposes, you can use the latest version with:</p>
+<pre><code>  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue&quot;&gt;&lt;/script&gt;</code></pre>
+<p>For production, we recommend linking to a specific version number and build to avoid unexpected breakage from newer versions:</p>
+<pre><code>  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h3>NPM</h3>
+<p>When building large scale apps with Vue, NPM is the recommended Vue installation method.</p>
