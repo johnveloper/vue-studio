@@ -10,6 +10,7 @@ table {
   width: 100%;
   border: 1px solid #aaaaaa;
   border-collapse: collapse;
+  background: #202041;
 }
 
 th, td {
